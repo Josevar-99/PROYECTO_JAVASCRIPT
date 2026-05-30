@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- contenedor principal-->
+     <div class="contenedor"> 
+        <h1>Gestion de productos</h1>
+        <!--Formulario de entrada-->
+        <div class="formulario">
+            <input type="text" id="nombre" placeholder="Nombre del producto">
+            <input type="number" id="precio" placeholder="Precio (ej: 99.99)">
+            <input type="text" id="descripcion" placeholder="Descripcion">
+
+            <!--contenedor de los botones--> 
+            <div class="botones">
+                <button id="btn-agregar"> Agregar producto</button>
+                <button id="btn-sincronizar"> Sincronizar con API</button>
+            </div>
+        </div>
+    
+     <!--Mensaje de exito o error-->
+     <div id="mensaje"></div>
+
+     <!--lista de productos renderizados-->
+     <ul id="lista-productos"></ul> 
+
+    </div>
+
+    <!--modulo de javascript-->
+    <script type="module" src="app.js"></script>
+</body>
+</html>

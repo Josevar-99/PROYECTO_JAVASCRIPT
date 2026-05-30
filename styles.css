@@ -1,0 +1,110 @@
+/*reset y base*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body { 
+    font-family: Arial,sans-serif;
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+}
+
+/*contenedor principal*/
+
+.contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/*titulo*/
+h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+/*formulario*/
+.formulario {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom:10px ;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.formulario input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.formulario .botones {
+    display: flex;
+    gap: 10px;
+}
+
+/*botones*/
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#btn-agregar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#btn-sincronizar {
+    background-color: #2196f3;
+    color: white;
+}
+
+/*botones de estado*/
+
+#mensaje {
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    display: none;
+}
+
+#mensaje.exito {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+#mensaje.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/*lista de productos*/
+
+#lista-productos {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-productos li {
+    background: white;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
